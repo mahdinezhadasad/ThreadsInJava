@@ -66,6 +66,8 @@ public class ThroughputHttpServer {
 
             long count = countWord(word);
 
+
+
             byte[] response = Long.toString(count).getBytes();
 
             exchange.sendResponseHeaders(200, response.length);
